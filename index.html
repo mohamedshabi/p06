@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionista(clone)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">FASHIONISTA</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#newarrivals">New Arrivals</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <span id="search">&#128269;</span>
+            <span id="cart">&#128722; <sup id="cartcount">0</sup></span>
+            <span id="menutoggle" class="menu">&#9776;</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="herocontent">
+            <h1>Step into your style</h1>
+            <p>Discover the latest trends and timeless fashion</p>
+            <button class="btn">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="products" id="shop">
+        <h2>Featured Products</h2>
+        <div class="productgrid">
+
+            <div class="product">
+                <img src="white.jpg" alt="dress">
+                <h3>Summer Dress</h3>
+                <p>$749</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="printed.jpg" alt="dress">
+                <h3>Summer Dress</h3>
+                <p>$499</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="Linen shirt.jpg" alt="dress">
+                <h3>Summer Dress</h3>
+                <p>$699</p>
+                <button class="addtocart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products" id="newarrivals">
+        <h2>New Arrivals</h2>
+        <div class="slider">
+            <div class="slides" id="slides">
+                <div class="slide"><img src="f1.jpg" alt="f1"></div>
+                <div class="slide"><img src="f2.jpg" alt="f2"></div>
+                <div class="slide"><img src="f3.jpg" alt="f3"></div>
+                <div class="slide"><img src="f4.jpg" alt="f4"></div>
+            </div>
+            <button class="sliderbtn prev" onclick="prev()">&#10094;</button>
+            <button class="sliderbtn next" onclick="next()">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="promo" id="sale">
+        <h2>upto 50% off</h2>
+        <p>Limited Time Only - Don't Missout!</p>
+        <button class="btn">Shop Sale</button>
+    </section>
+
+    <section class="newsletter" id="contact">
+        <h2>Join Our fashion Community</h2>
+        <p>sign up and get 10% off on your first order</p>
+        <form id="newsletterform">
+            <input id="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <div class="footerlinks">
+            <a href="#">About</a>  |  <a href="#">Carrers</a>  |  <a href="#">Help</a>
+        </div>
+
+        <div class="social">
+            <a href="#">Instagram</a>  •  <a href="#">Facebook</a>    •  <a href="#">Twitter</a>
+        </div>
+
+        <p>&copy; 2025 Fashionista.  All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
