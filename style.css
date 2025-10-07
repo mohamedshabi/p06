@@ -27,9 +27,9 @@ header{
     z-index: 1000;
 }
 
-.logo{
-    font-size: 24px;
-    font-weight: bold;
+.logo img{
+    height: 65px;
+    width: 100px;
 }
 
 nav ul{
